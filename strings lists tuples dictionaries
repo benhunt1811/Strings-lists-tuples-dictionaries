@@ -1,0 +1,142 @@
+
+# Exercise 2 
+dateInput = input("type in the date: ")
+dateList = dateInput.split("/")
+
+
+if dateList[1] == "1":
+  print("The date is " + dateList[0] + " January " + dateList[2])
+if dateList[1] == "2":
+  print("The date is " + dateList[0] + " February " + dateList[2])
+if dateList[1] == "3":
+  print("The date is " + dateList[0] + " March " + dateList[2])
+if dateList[1] == "4":
+  print("The date is " + dateList[0] + " April " + dateList[2])
+if dateList[1] == "5":
+  print("The date is " + dateList[0] + " May " + dateList[2])
+if dateList[1] == "6":
+  print("The date is " + dateList[0] + " June " + dateList[2])
+if dateList[1] == "7":
+  print("The date is " + dateList[0] + " July " + dateList[2])
+if dateList[1] == "8":
+  print("The date is " + dateList[0] + " August " + dateList[2])
+if dateList[1] == "9":
+  print("The date is " + dateList[0] + " September " + dateList[2])
+if dateList[1] == "10":
+  print("The date is " + dateList[0] + " October " + dateList[2])
+if dateList[1] == "11":
+  print("The date is " + dateList[0] + " November " + dateList[2])
+if dateList[1] == "12":
+  print("The date is " + dateList[0] + " December " + dateList[2])
+
+
+
+
+
+a_list = [3, 5, 6, 12]
+
+# Exercise 1
+#print(a_list[0])
+
+# Exercise 2 
+#Extra_Number = a_list.pop(0)
+#print(a_list)
+
+# Exercise 3
+#b_list = a_list.pop(3)
+#c_list = a_list.pop(2)
+#d_list = a_list.pop(1)
+#e_list = a_list.pop(0)
+#final_list = (b_list, c_list, d_list, e_list)
+#print(final_list)
+
+# Exercise 4
+#b_list = []
+#for item in a_list:
+  #item = item * 3
+  #b_list.append(item)
+#print(b_list)
+
+# Exercise 5
+#for item in a_list:
+  #if item == 6 or item == 12:
+    #print("True")
+  #else:
+    #print("False")
+
+
+
+
+  
+# Task 2
+#newList = []
+#myList = ["axe", "dagger", "oranges"]
+#for item in myList:
+  #newList.append("*")
+  #newList.append(item)
+  #if len(myList) >= 6:
+    #break
+
+#print(newList)
+
+
+
+
+# Tuple Exercise
+newList = []
+tupleList = [(), ("a", "b"), (), ("b"), ()]
+for item in tupleList:
+  length = len(item)
+  if length > 0:
+    newList.append(item)
+    
+print(newList)
+
+
+
+
+
+team = {
+  1 : 1 ** 2,
+  2 : 2 ** 2,
+  3 : 3 ** 2,
+  4 : 4 ** 2,
+  5 : 5 ** 2,
+  6 : 6 ** 2,
+  7 : 7 ** 2,
+  8 : 8 ** 2,
+  9 : 9 ** 2,
+  10 : 10 ** 2,
+
+}
+
+
+
+
+
+
+room_items = { "item1" : {"Name" : "Lamp", "Colour" : "Red"},
+"item2": {"Name" : "Table", "Colour" : "Brown", "Type": 0},
+"item3": {"Name" : "Lamp", "Colour" : "Red"},
+"item4": {"Name" : "Chair", "Colour" : "Green", "Type": 1}
+}
+
+value = list(room_items.items())
+if value[0][1] == value[2][1]:
+  print("YES")
+value.remove(value[0])
+value.remove(value[2])
+print(value)
+
+
+
+
+
+inventory = {}
+choice = input("Choose between a sword or bow: ")
+if choice == "sword":
+  inventory['weapon'] = 'Sword'
+  print(inventory)
+if choice == "bow":
+  inventory["weapon"] = "Bow"
+  print(inventory)
